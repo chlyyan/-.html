@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+<meta charset="utf-8">
+<style>
+ table{
+   border: 0px solid; border-collapse: collapse; text-align: center;
+ }
+ td{
+   padding: 3px;  background-color: pink; color: white;  border : 1px solid;
+ }
+  .a3{
+    background-color: white; color: black; border-color: pink;  border-width: 1px; text-align: left;
+  }
+  .d2{
+    background-color: pink;
+    color: black;
+    padding: 10px;
+}
+   </style>
+   </head>
+<body>
+  <input type="button" value="night" onclick="
+    var target  = document.querySelector('body');
+    if (this.value === 'night'){
+       target.style.backgroundColor = 'black';
+       target.style.color = 'white';
+       this.value = 'day';
+       var alist = document.querySelectorAll('a');
+       var i = 0;
+       while(i<1){
+         console.log(alist[i]);
+           alist[i].stlye.color = 'red';
+           i = i + 1;
+         }
+       }
+       else {
+       target.style.backgroundColor = 'white';
+       target.style.color = 'black';
+       this.value = 'night';
+
+       var alist = document.querySelectorAll('a');
+            var i = 0;
+              while(i < 1){
+                console.log(alist[i]);
+                alist[i].stlye.color = 'blue';
+                i = i + 1;
+              }
+            }
+   ">
+<div>
+<table class="g2">
+  <tr>
+    <th colspan="2" class="d2">아이묭 <br>あいみょん Aimyon</br></th>
+  </tr>
+  <tr>
+    <td colspan="2" class="a2"><img src="아이묭1.jpg" width=500px></td>
+    </tr>
+      <div class="a3">
+    <tr>
+    <td>본명</td><td class="a3">비공개</td>
+    </tr>
+    <tr>
+    <td >출생</td><td class="a3">1995년 3월 6일</td>
+    </tr>
+    <tr>
+      <td></td><td class="a3">효고현니시노미야</td>
+      </tr>
+        <tr>
+        <td>국적</td><td class="a3">일본</td>
+        </tr>
+        <tr>
+        <td >신체</td><td class="a3">161cm,45kg</td>
+        </tr>
+        <tr>
+        <td >직업</td><td class="a3">싱어송라이터,작곡가,작사가</td>
+        </tr>
+        <tr>
+        <td >소속사</td><td class="a3">엔즈 엔터테인먼트</td>
+        </tr>
+        <tr>
+        <td >레이블</td><td class="a3">Lastrum Music Entertainment</td>
+        </tr>
+        <tr>
+        <td >데뷔</td><td class="a3"><a href="https://www.youtube.com/watch?v=EEMwA8KZAqg2016년"target=blank>싱글 生きていたんだよな</td></a>
+        </tr>
+        <tr>
+        <td>활동 기간</td><td class="a3">2014년~현재</td>
+        </tr>
+        </div>
+    </table>
+  </body>
+</html>
