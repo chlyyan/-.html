@@ -3,6 +3,22 @@
 <head>
   <title>기분좋다</title>
 <meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+</script>
+<script src=colors.js>
+</script>
+<script>
+function wide1(){
+  if(document.getElementById('plus').style.display === 'block'){
+    document.getElementById('plus').style.display = 'none';
+
+    document.getElementById('plus1').textContent = '데뷔 목록 보이기';
+} else {
+  document.getElementById('plus').style.display = 'block';
+  document.getElementById('plus1').textContent = '데뷔 목록 숨기기';
+  }
+}
+</script>
 <style>
  table{
    border: 0px solid; border-collapse: collapse; text-align: center;
@@ -11,53 +27,80 @@
    padding: 3px;  background-color: pink; color: white;  border : 1px solid;
  }
   .a3{
-    background-color: white; color: black; border-color: pink;  border-width: 1px; text-align: left;
+    background-color: white; color: black; border-color: pink;  border-width: 1px; text-align: left; padding: 5px;
   }
   .d2{
     background-color: pink;
     color: black;
     padding: 10px;
-}
+  }
+  .table{
+    position: fixed;
+    left: 800px;
+    bottom: 100px;
+  }
+  .mini{
+    position: fixed;
+    left: 400px;
+    width: 200px;
+    border: gray  1px solid;
+    margin-top: 150px;
+  }
+  .table1{
+    position: fixed;
+    width: 800px;
+    height: 100px;
+    border: pink 2px solid;
+    left: 450px;
+    font-size: 30px;
+  }
+  #plus{
+    display: none;
+  }
+  #plus1{
+    cursor: pointer;
+  }
    </style>
    </head>
 <body>
-  <input type="button" value="night" onclick="
-    var target  = document.querySelector('body');
-    if (this.value === 'night'){
-       target.style.backgroundColor = 'black';
-       target.style.color = 'white';
-       this.value = 'day';
-       var alist = document.querySelectorAll('a');
-       var i = 0;
-       while(i<1){
-         console.log(alist[i]);
-           alist[i].stlye.color = 'red';
-           i = i + 1;
-         }
-       }
-       else {
-       target.style.backgroundColor = 'white';
-       target.style.color = 'black';
-       this.value = 'night';
-
-       var alist = document.querySelectorAll('a');
-            var i = 0;
-              while(i < 1){
-                console.log(alist[i]);
-                alist[i].stlye.color = 'blue';
-                i = i + 1;
-              }
-            }
-   ">
-<div>
-<table class="g2">
+<table class='table1'>
+<tbody>
+    <tr>
+    <td>AIMYON</td>
+  </tr>
+  <tr>
+    <td style="background-Color: white; color: black; font-size:15px;">
+      <div style="margin-top:0 -10px;;"></div>
+        <div id="plus1" onclick="wide1()">데뷔 목록 보이기</div>
+        <div id="plus">
+        <div><strong>2016년 11월, 싱글〈生きていたんだよな〉로 메이저 데뷔를 했다.</div></strong>
+        <div><strong>2018년 8월, 발매한 싱글〈マリーゴールド〉가 선풍적인 인기를 끌며 그 해, 처음으로 홍백가합전에 출전했다.</strong></div>
+        </td>
+    </table>
+  </tr>
+  </tbody>
+</div>
+  <div class="mini">
+  <ol><span>목차</ol></span>
+  <ol><span>1. 개요</ol></span></a>
+  <ol><span>2. 역사</ol></span>
+  <ol><span>3. 음악 스타일</ol></span>
+  <ol><span>4. 디스코그래피</ol></span>
+  <ol><span>5. 콘서트</ol></span>
+  <ol><span>6. 출연</ol></span>
+  <ol><span>7. 수상</ol></span>
+  <ol><span>8. 역대 프로필 사진</ol></span>
+  <ol><span>9. 여담</ol></span>
+</div>
+<div class="table">
+<table style="width:500px">
+  <tbody>
   <tr>
     <th colspan="2" class="d2">아이묭 <br>あいみょん Aimyon</br></th>
   </tr>
   <tr>
     <td colspan="2" class="a2"><img src="아이묭1.jpg" width=500px></td>
     </tr>
-      <div class="a3">
     <tr>
     <td><strong>본명</strong></td><td class="a3">비공개</td>
     </tr>
@@ -71,24 +114,29 @@
         <td><strong>국적</strong></td><td class="a3">일본</td>
         </tr>
         <tr>
-        <td ><strong>신체</strong></td><td class="a3">161cm,45kg</td>
+        <td><strong>신체</strong></td><td class="a3">161cm,45kg</td>
         </tr>
         <tr>
-        <td ><strong>직업</strong></td><td class="a3">싱어송라이터,작곡가,작사가</td>
+        <td><strong>직업</strong></td><td class="a3">싱어송라이터,작곡가,작사가</td>
         </tr>
         <tr>
-        <td ><strong>소속사</strong></td><td class="a3">엔즈 엔터테인먼트</td>
+        <td><strong>소속사</strong></td><td class="a3">엔즈 엔터테인먼트</td>
         </tr>
         <tr>
-        <td ><strong>레이블</strong></td><td class="a3">Lastrum Music Entertainment</td>
+        <td><strong>레이블</strong></td><td class="a3">Lastrum Music Entertainment</td>
         </tr>
         <tr>
-        <td ><strong>데뷔</strong></td><td class="a3"><a href="https://www.youtube.com/watch?v=EEMwA8KZAqg2016년"target=blank>싱글 生きていたんだよな</td></a>
+        <td><strong>데뷔</strong></td><td class="a3"><a href="https://www.youtube.com/watch?v=EEMwA8KZAqg2016년"target=blank>싱글 生きていたんだよな</td></a>
         </tr>
         <tr>
         <td><strong>활동 기간</strong></td><td class="a3">2014년~현재</td>
         </tr>
-        </div>
-    </table>
+      </table>
+    </div>
+  </tbody>
+    <input type="button" value="응가" onclick="
+    niceshot(this);
+    ">
+    <input type="button" value="押しないでください"  onclick="alert('悪病')">
   </body>
 </html>
