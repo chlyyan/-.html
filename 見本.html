@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      body{
+        background-color: pink;
+      }
+      .contrainer{
+        display: flex;
+        justify-content: center;
+        margin-top:300px;
+      }
+       .main-text{
+        text-align: center;
+        background-color: white;
+        width: 300px;
+        height: 300px;
+        border: 3px solid white;
+        border-radius: 8px;
+      }
+      .button-1,.button-2{
+        margin-top:10px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+        <div class="contrainer">
+          <div class="main-text">
+            <div>ID</div>
+              <input type="id" name="id"  class="button-2">
+            <div>PASSWORD</div>
+              <input type="password" name="pass"  class="button-2">
+            <div><input type="button" class="button-1" value="로그인" onclick="location.href='見本2.html'"></div>
+          </div>
+        </div>
+      </div>
+            <script>
+            document.getElementsByClassName('button-1').onclick = function () {
+              location.href = "見本2.html";
+                  };
+            </script>
+    </body>
+</html>
