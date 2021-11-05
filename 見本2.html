@@ -3,8 +3,106 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <style>
+      body{
+      }
+      .pop{
+        display:flex;
+        flex-direction: row;
+        border-bottom:solid 2px gray;
+        padding-bottom:15px;
+        background:lightgreen;
+        }
+      .menu-item{
+        padding-left:50px;
+        }
+      a{
+        text-decoration: none;
+        padding: 1em;
+        }
+        .pop1{
+          position:flex;
+          justify-content: space-around;
+          border-left:solid 3px gray;
+        }
+        span{
+          margin-left: 380px;
+        }
+        #text-event{
+          background-color: black;
+        }
+        #text-event1{
+          background-color: pink;
+        }
+        #text-event2{
+          background-color:green;
+        }
+        #text-event3{
+          background-color:blue;
+        }
+    </style>
   </head>
   <body>
-    ddsdsdsdsdsds
+      <nav>
+        <div class="pop">
+            <a href="https://www.fmkorea.com/football_news"><li class="menu-item">고객센터</li></a>
+            <a href="https://www.fmkorea.com/football_news"><li class="menu-item">유치원</li></a>
+            <a href="https://www.fmkorea.com/football_news"><li class="menu-item">응디쪽</li></a>
+            <a href="https://www.fmkorea.com/football_news"><li class="menu-item">느금마</li></a>
+            <a href="https://www.fmkorea.com/football_news"><li class="menu-item">느금마</li></a>
+            <a href="https://www.fmkorea.com/football_news"><li  style="border-right:solid 2px #66CDAA;"class="menu-item">느금마</li></a>
+        </div>
+      </nav>
+      <div class="pop1">
+        <div style="height:250px" id="text-event"   onmouseover="mouseover()" onmouseout="mouseOut()">1</div>
+        <div style="height:250px" id="text-event1"  onmouseover="party()" onmouseout="party1()">2</div>
+        <div style="height:250px" id="text-event2"  onmouseover="party2()" onmouseout="party3()" >3</div>
+        <div style="height:250px" id="text-event3"  onmouseover="party4()" onmouseout="party5()">4</div>
+        </div>
+        <script>
+        document.getElementById("text-event").addEventListener("mouseover", mouseover);
+        document.getElementById("text-event").addEventListener("mouseout", mouseOut);
+
+          var para = document.getElementById('text-event')
+          function mouseover() {
+            para.style.backgroundColor = "white";
+          }
+          function mouseOut() {
+          para.style.backgroundColor = "black";
+          }
+
+
+          var para1 = document.getElementById('text-event1')
+          document.getElementById('text-event1').addEventListener("party", mouseover);
+          document.getElementById('text-event1').addEventListener("party1", mouseOut)
+          function party() {
+            para1.style.backgroundColor= "red";
+          }
+          function party1(){
+            para1.style.backgroundColor= "pink";
+              }
+
+
+              var para2 = document.getElementById('text-event2')
+              document.getElementById('text-event2').addEventListener("party2", mouseover);
+              document.getElementById('text-event2').addEventListener("party3", mouseOut)
+              function party2() {
+                para2.style.backgroundColor= "gray";
+              }
+              function party3(){
+                para2.style.backgroundColor= "green";
+                  }
+
+
+                  var para3 = document.getElementById('text-event3')
+                  document.getElementById('text-event3').addEventListener("party4", mouseover);
+                  document.getElementById('text-event3').addEventListener("party5", mouseOut)
+                  function party4() {
+                    para3.style.backgroundColor= "orange";
+                  }
+                  function party5(){
+                    para3.style.backgroundColor= "blue";
+                  }
+        </script>
   </body>
 </html>
