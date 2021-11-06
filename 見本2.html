@@ -29,16 +29,16 @@
           margin-left: 380px;
         }
         #text-event{
-          background-color: black;
+          background-color: white;
         }
         #text-event1{
-          background-color: pink;
+          background-color: white;
         }
         #text-event2{
-          background-color:green;
+          background-color:white;
         }
         #text-event3{
-          background-color:blue;
+          background-color:white;
         }
     </style>
   </head>
@@ -54,10 +54,10 @@
         </div>
       </nav>
       <div class="pop1">
-        <div style="height:250px" id="text-event"   onmouseover="mouseover()" onmouseout="mouseOut()">1</div>
-        <div style="height:250px" id="text-event1"  onmouseover="party()" onmouseout="party1()">2</div>
-        <div style="height:250px" id="text-event2"  onmouseover="party2()" onmouseout="party3()" >3</div>
-        <div style="height:250px" id="text-event3"  onmouseover="party4()" onmouseout="party5()">4</div>
+        <div style="height:250px" id="text-event"   onmouseover="mouseover()" onmouseout="mouseOut()">신상 핸드폰 소개</div>
+        <div style="height:250px" id="text-event1"  onmouseover="party()" onmouseout="party1()">핸드폰vs핸드폰 성능비교</div>
+        <div style="height:250px" id="text-event2"  onmouseover="party2()" onmouseout="party3()">중고핸드폰</div>
+        <div style="height:250px" id="text-event3"  onmouseover="party4()" onmouseout="party5()">핸드폰 부가적인거 구매</div>
         </div>
         <script>
         document.getElementById("text-event").addEventListener("mouseover", mouseover);
@@ -65,10 +65,10 @@
 
           var para = document.getElementById('text-event')
           function mouseover() {
-            para.style.backgroundColor = "white";
+          para.style.backgroundColor = "black";
           }
           function mouseOut() {
-          para.style.backgroundColor = "black";
+          para.style.backgroundColor = "white";
           }
 
 
@@ -79,7 +79,7 @@
             para1.style.backgroundColor= "red";
           }
           function party1(){
-            para1.style.backgroundColor= "pink";
+            para1.style.backgroundColor= "white";
               }
 
 
@@ -90,7 +90,7 @@
                 para2.style.backgroundColor= "gray";
               }
               function party3(){
-                para2.style.backgroundColor= "green";
+                para2.style.backgroundColor= "white";
                   }
 
 
@@ -101,7 +101,7 @@
                     para3.style.backgroundColor= "orange";
                   }
                   function party5(){
-                    para3.style.backgroundColor= "blue";
+                    para3.style.backgroundColor= "white";
                   }
         </script>
   </body>
